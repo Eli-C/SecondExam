@@ -58,7 +58,21 @@ module.exports = function(grunt) {
     });
 
 
-    grunt.registerTask('build',
-    ['generateIndex', 'generatePage1', 'generatePage2']);
+    grunt.loadNpmTasks('grunt-contrib-jasmine');
+    
+        grunt.initConfig({
+            jasmine: {
+              JS: {
+                options: {
+                  specs: 'spec/*.spec.js'
+                }
+              }
+            }
+          });
 
+
+    grunt.registerTask('build',
+    ['generateIndex', 'generatePage1', 'generatePage2', 'jasmine']);
+
+    
 }

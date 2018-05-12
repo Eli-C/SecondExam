@@ -4,9 +4,13 @@
   "description": "Practice For The Second Exam",
   "main": "index.js",
   "dependencies": {
-    "grunt": "^1.0.2"
+    "grunt": "^1.0.2",
+    "jasmine": "^3.1.0",
+    "phantomjs-prebuilt": "^2.1.16"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "grunt-contrib-jasmine": "^1.2.0"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
